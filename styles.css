@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Open+Sans:wght@300;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{ 
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.6)), url(images/foodhome3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav{ 
+    display: flex;
+    padding: 2% 6%; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{ 
+    flex: 1;
+    text-align: right;
+
+}
+.nav-links ul li{ 
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    
+} 
+.nav-links ul li::after{ 
+    content: '';
+    width: 0%; 
+    height: 2px;
+    background-color: rgb(223, 95, 21);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{ 
+    width: 100%;
+}
+.text-box{ 
+    width: 90%;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.text-box h1{ 
+    font-size: 50px;
+}
+.text-box p{ 
+    margin: 10px 0 40px;
+    font-size: 18px;
+}
+.hero-btn{ 
+    font-size: 17px;
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{ 
+    border: 1px solid rgb(223, 95, 21);
+    background-color: rgb(223, 95, 21);
+    transition: 1s;
+}
+nav .fa{ 
+    display: none;
+}
+@media(max-width: 700px) {
+
+    .text-box h1{ 
+    font-size: 30px;
+    }
+    .nav-links ul li{ 
+        list-style: none;
+        display: block;
+        
+    }
+    .nav-links li{ 
+        margin: 1rem;
+    }
+    .nav-links{ 
+        position: absolute;
+        background-color: rgb(207, 85, 14);
+        height: 100vh; 
+        width: 200px; 
+        top: 0; 
+        right: 0; 
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{ 
+        display: block; 
+        color: white;
+        margin: 10px; 
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{ 
+        padding: 30px;
+    }
+    .nav-links ul li:hover::after{ 
+        width: 0%;
+    }
+
+
+
+    
+}
+.recipes{ 
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{ 
+    font-size: 30px;
+    font-weight: 600;
+}
+.recipes p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #777;
+    padding: 15px;
+    line-height: 22px;
+}
+.row{ 
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.recipe-option{ 
+    flex-basis: 31%;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px; 
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.recipe-option h3{ 
+    color:rgb(207, 85, 14);
+    text-align: center;
+    margin: 10px 0; 
+    text-decoration: none;
+}
+.recipe-option a{ 
+    text-decoration: none;
+    color:rgb(207, 85, 14);
+}
+.recipe-option:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+
+@media(max-width: 700px) {
+    .row{ 
+        flex-direction: column;
+    }
+}
+.cta{ 
+    margin: 100px auto;
+    width: 80%; 
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.7)), url(images/food-end.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    color:white;
+}
+.cta h1{ 
+    margin-bottom: 40px;
+    padding: 0;
+}
+@media(max-width: 700px) {
+    .cta h1{ 
+        font-size: 20px;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+}
+.footer{ 
+    width: 100%; 
+    text-align: center;
+    padding: 30px 0;
+}
+h4{ 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icons .fab{ 
+    color: #f44336;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+.breakfast{ 
+    background-image: linear-gradient(rgba(4,9,30,0.2),rgba(4,9,30,0.6)), url(images/foodbf.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+  
+  

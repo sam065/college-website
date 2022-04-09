@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickRecipes</title>
+    <link rel="stylesheet" href="styles.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="breakfast">
+        <nav>
+            
+            <div class = "nav-links" id="navlinks">
+                <i class="fa fa-times" onclick = "hidemenu()"></i>
+                <ul>
+                    
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/">ABOUT</a></li>
+                    <li><a href="/">RECIPES</a></li>
+                    <li><a href="/">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class= "fa fa-bars" onclick = "showmenu()"></i>
+            
+        </nav>
+        <section class="recipes">
+            
+            <div class="row ">
+                <div class="recipe-option">
+                    <h3><a href="/breakfast.html">Breakfast</a></h3>
+                    <p>As the first meal of your day, your breakfast should be a healthy balance of carbs, proteins and good fats. With both light and heavy options, we think your breakfast should make the most amazing start of your day! Don't skip it, it won't take too long, we promise. :) </p>
+                </div>
+                <div class="recipe-option">
+                    <h3>Snacks</h3>
+                    <p>Feeling a little hungry, but don't know what to eat instead of that bag of chips? We've got you covered. Here, we have some healthy and easy to make snack options, that would go very well alongside your netflix. ;)</p>
+                </div>
+                <div class="recipe-option">
+                    <h3>Lunch or Dinner</h3>
+                    <p>We all want satisfying meals, but don't want to stay in kitchen for too long. Ah, we know. No worries. Proper meals don't always take a lot of time. :)</p>
+                </div>
+                
+                
+            </div>
+            <div class="row ">
+                <div class="recipe-option">
+                    <h3><a href="/breakfast.html">Breakfast</a></h3>
+                    <p>As the first meal of your day, your breakfast should be a healthy balance of carbs, proteins and good fats. With both light and heavy options, we think your breakfast should make the most amazing start of your day! Don't skip it, it won't take too long, we promise. :) </p>
+                </div>
+                <div class="recipe-option">
+                    <h3>Snacks</h3>
+                    <p>Feeling a little hungry, but don't know what to eat instead of that bag of chips? We've got you covered. Here, we have some healthy and easy to make snack options, that would go very well alongside your netflix. ;)</p>
+                </div>
+                <div class="recipe-option">
+                    <h3>Lunch or Dinner</h3>
+                    <p>We all want satisfying meals, but don't want to stay in kitchen for too long. Ah, we know. No worries. Proper meals don't always take a lot of time. :)</p>
+                </div>
+            
+                
+                
+            </div>
+            <div class="row ">
+                <div class="recipe-option">
+                    <h3><a href="/breakfast.html">Breakfast</a></h3>
+                    <p>As the first meal of your day, your breakfast should be a healthy balance of carbs, proteins and good fats. With both light and heavy options, we think your breakfast should make the most amazing start of your day! Don't skip it, it won't take too long, we promise. :) </p>
+                </div>
+                <div class="recipe-option">
+                    <h3>Snacks</h3>
+                    <p>Feeling a little hungry, but don't know what to eat instead of that bag of chips? We've got you covered. Here, we have some healthy and easy to make snack options, that would go very well alongside your netflix. ;)</p>
+                </div>
+                <div class="recipe-option">
+                    <h3>Lunch or Dinner</h3>
+                    <p>We all want satisfying meals, but don't want to stay in kitchen for too long. Ah, we know. No worries. Proper meals don't always take a lot of time. :)</p>
+            </div>
+            
+            
+    
+        </section>
+    </section>
+        <section class="footer">
+            <h4>Get in touch!</h4>
+            <p>We would love to hear more from you. Suggestions are always welcome.</p>
+            <div class="icons">
+                <i class="fab fa-telegram"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+            </div>
+        </section>
+        
+        <script>
+            var navlink = document.getElementById("navlinks"); 
+            function showmenu(){ 
+                navlink.style.right = 0;
+            }
+            function hidemenu(){ 
+                navlink.style.right = "-200px" ;
+            }
+        </script>
+</body>
+</html>
